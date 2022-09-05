@@ -2,19 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Menu from './components/Menu';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter} from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-  <Link  to={'/Menu'}></Link>
-    <Routes>
-      <Route path="/" element={<App />} >
-      <Route path="/Menu" element={<Menu/>}/>
-      </Route> 
-    </Routes>
-  
+    <App />
     </BrowserRouter>
 
 );

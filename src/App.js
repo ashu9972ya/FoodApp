@@ -1,12 +1,16 @@
 import React from 'react'
-import AppBar from './components/Appbar'
-import Home from './components/Home'
-
+import { Routes, Route} from 'react-router-dom';
+import Menu from './components/Menu';
+import Home from "./components/Home";
+import Appbar from './components/Appbar';
 const App = () => {
   return (  
     <div>
-    <AppBar/> 
-    <Home/>
+       <Appbar/>
+     <Routes>
+      <Route path="/" element={<Home/>}/>
+     <Route path="Menu" element={<Menu/>}/>
+      </Routes>
     </div>
   )
 }
