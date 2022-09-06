@@ -16,8 +16,9 @@ background-color: rgb(60, 58, 226);
 color: white;
 outline: none;
 border: 1px solid;
-margin: auto;
+margin: 50px;
 width: 100px;
-padding: 5px
+height: 25%;
+padding: 0px
 
 }
